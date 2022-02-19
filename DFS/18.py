@@ -1,5 +1,5 @@
-#2022-02-12
-#12
+#2022-02-18
+#18
 graph = [
   [], 
   [2,3,8],
@@ -20,6 +20,5 @@ def dfs(graph, v, visited):
   for i in graph[v]:
     if not visited[i]:
       dfs(graph, i, visited)
-
 dfs(graph, 1, visited)
 print()
