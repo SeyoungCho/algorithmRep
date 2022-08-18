@@ -18,7 +18,6 @@ def find_parent(parent, x):
     else:
         return parent[x]
 
-
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
     b = find_parent(parent, b)
@@ -26,7 +25,6 @@ def union_parent(parent, a, b):
         parent[b] = a
     else:
         parent[a] = b
-
 
 #initialize parent table
 parent = [0] * (v + 1)
