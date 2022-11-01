@@ -1,5 +1,5 @@
 #2022-10-31
-#132
+#30
 #no. of nodes
 v = 7
 #no. of edges
