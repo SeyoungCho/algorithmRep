@@ -21,4 +21,3 @@ if idx == None:
   print("Target %d not found"%target)
 else:
   print("Target %d found at idx %d"%(target, idx))
-  
