@@ -1,5 +1,5 @@
-#2022-10-18
-#20
+#2023-02-15
+#84
 #no. of nodes
 v = 7
 #no. of edges
@@ -10,7 +10,7 @@ edges = [(29, 1, 2), (35, 2, 3), (7, 3, 4), (75, 1, 5), (53, 5, 6), (23, 4, 6),
 
 result = []
 min_cost = 0
-parent = [0] * (v + 1)4
+parent = [0] * (v + 1)
 
 for i in range(1, v+1):
 	parent[i] = i
@@ -36,6 +36,5 @@ for edge in edges:
 		result.append(edge)
 		union_parent(parent, a, b)
 		min_cost += cost
-
 print("result: ", result)
-print("minimum_cost: ", min_cost)
+print("minimum cost: ", min_cost)
