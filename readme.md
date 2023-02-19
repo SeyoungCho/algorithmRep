@@ -9,3 +9,4 @@
 - BFS
 - Dijkstra
 - Floyd-Warshall
+- Kruskal
