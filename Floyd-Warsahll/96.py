@@ -15,19 +15,21 @@ graph[3][4] = 4
 graph[4][3] = 2
 
 for i in range(1, 5):
-  graph[i][i] = 0
+    graph[i][i] = 0
+
 
 def floyd_warshall(graph, n):
-	for i in range(1, n+1):
-		for j in range(1, n+1):
-			for k in range(1, n+1):
-				graph[j][k] = min(graph[j][k], graph[j][i]+graph[i][k])
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            for k in range(1, n + 1):
+                graph[j][k] = min(graph[j][k], graph[j][i] + graph[i][k])
+
 
 floyd_warshall(graph, 4)
 for i in range(1, 5):
-	for j in range(1, 5):
-		if graph[i][j] == INF:
-			print("INF", end=' ')
-		else:
-			print(graph[i][j], end=' ')
-	print()		
+    for j in range(1, 5):
+        if graph[i][j] == INF:
+            print("INF", end=' ')
+        else:
+            print(graph[i][j], end=' ')
+    print()
